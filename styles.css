@@ -1,0 +1,42 @@
+:root {
+  --bg:#0a0a0a;
+  --ink:#f7f7f7;
+  --brand:#FFD400;
+  --brand-ink:#111;
+}
+
+body {
+  margin:0;
+  font-family:Inter, sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+}
+
+.container { max-width:1100px; margin:0 auto; padding:0 20px; }
+.header { background:#111; padding:15px; position:sticky; top:0; }
+.brand { font-family:Montserrat, sans-serif; font-weight:800; color:var(--brand); }
+.menu a { margin:0 10px; color:var(--ink); }
+
+.hero { padding:80px 20px; position:relative; text-align:center; }
+.hero-bg { position:absolute; inset:0; opacity:.2; }
+.hero h1 { font-size:2.5rem; }
+.kicker { color:var(--brand); text-transform:uppercase; font-weight:600; }
+.btn { padding:10px 18px; border-radius:50px; border:2px solid var(--brand); text-decoration:none; }
+.btn-primary { background:var(--brand); color:var(--brand-ink); }
+.btn-ghost { color:var(--ink); }
+.btn-outline { color:var(--ink); border-color:#555; }
+
+.section { padding:60px 20px; }
+.section.alt { background:#111; }
+h2 { color:var(--brand); }
+
+.grid.services { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.card { background:#1a1a1a; padding:20px; border-radius:10px; }
+
+.chiplist { display:flex; gap:10px; flex-wrap:wrap; padding:0; list-style:none; }
+.chiplist li { background:#222; padding:5px 10px; border-radius:20px; }
+
+.footer { background:#111; text-align:center; padding:20px; }
+.phone { font-size:1.5rem; font-weight:800; color:var(--brand); }
+
+.sticky-call { position:fixed; bottom:20px; right:20px; background:var(--brand); color:var(--brand-ink); padding:12px 18px; border-radius:50px; font-weight:700; }
